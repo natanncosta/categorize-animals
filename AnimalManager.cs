@@ -24,12 +24,8 @@ namespace ex1
                 animal = animals[i];
                 Console.WriteLine($"Nome: {animal.Name}");
                 Console.WriteLine($"Dono: {animal.Owner}");
-                if (animal is Fish)
+                if (animal is not Fish)
                 {
-                }
-                else
-                {
-
                     walk.Walk(animal as IWalk);
                 }
                 Console.WriteLine($"Categoria: {animal.Category}\n");
