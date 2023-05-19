@@ -2,11 +2,11 @@ using System;
 
 namespace ex1
 {
-    public class ToWalk : IWalk
+    public class ToWalk
     {
-        public void Walk()
+        public void Walk(IWalk animal)
         {
-            Console.WriteLine($"estah caminhando.");
+            animal.Walk();
         }
     }
 }

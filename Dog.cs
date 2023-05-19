@@ -6,6 +6,7 @@ namespace ex1
         public Dog(string name, string owner, string category) : base(name, owner, category)
         {
         }
+
         public void Walk()
         {
             Console.WriteLine("estah caminhando.");
